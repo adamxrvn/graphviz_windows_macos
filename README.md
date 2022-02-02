@@ -41,11 +41,9 @@ You will end up with a CMake file similar to this
 
     printImage("output", "png", graph);
 ```
+> **_NOTE:_** <br/>
+To get a dot file use the "gv" extension
 4. Run the code
 
 ![Graph](pictures/output.png "Graph")
 
----
-> **_NOTE:_** <br/>
-To get a dot file use the "gv" extension
----
