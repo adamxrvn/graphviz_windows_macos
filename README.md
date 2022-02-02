@@ -15,7 +15,7 @@ include_directories("${GRAPHVIZ_DIR}/include/graphviz")
 ```
 
 #### MacOS
-3. Open CMakeLists.txt and define the location of our library using "set" command. Replace "/usr/local/Cellar/graphviz/2.50.0" with your path. \The path depends on the way you installed the graphviz and its version. If it is installed using Homebrew, it can be found in "/usr/local/Cellar/" folder.
+3. Open CMakeLists.txt and define the location of our library using "set" command. Replace "/usr/local/Cellar/graphviz/2.50.0" with your path. <br/>The path depends on the way you installed the graphviz and its version. If it is installed using Homebrew, it can be found in "/usr/local/Cellar/" folder.
 ```
 set(GRAPHVIZ_DIR "/usr/local/Cellar/graphviz/2.50.0")
 ```
