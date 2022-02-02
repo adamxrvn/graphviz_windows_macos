@@ -29,9 +29,10 @@ You will end up with a CMake like this
     printImage("output", "png", graph);
 ```
 4. Run the code
+
 ![Graph](pictures/output.png "Graph")
 
 ---
-**Note**
+**Note** <br/>
 To get a dot file use the "gv" extension
 ---
