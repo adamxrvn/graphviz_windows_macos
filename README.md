@@ -33,6 +33,6 @@ You will end up with a CMake like this
 ![Graph](pictures/output.png "Graph")
 
 ---
-**Note** <br/>
+> **_NOTE:_** <br/>
 To get a dot file use the "gv" extension
 ---
