@@ -33,7 +33,7 @@ You will end up with a CMake file similar to this
 0. To save graphs w/o specifying an absolute path add a working directory. In CLion: Run -> Edit Configuration -> Working directory.
 1. Create a graph object. You can check an example in the project folder (made by [@jcarrasquel](https://github.com/jcarrasquel)).
 2. Add a modified ```graph2img``` header file to your project
-2. Use the ```printImage()``` method and path a filename, extension, and the graph:
+2. Use the ```printImage()``` method and pass a filename, extension, and the graph:
 ```C++
     MyGraph graph;
     buildGraph(graph);
