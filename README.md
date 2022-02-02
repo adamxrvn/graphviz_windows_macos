@@ -2,7 +2,6 @@
 ### Configuration
  1. Install Graphviz for [Windows](https://graphviz.org/download/#windows)/[Mac OS](https://graphviz.org/download/#mac) and remember the installation path. In my case it is "C:\\Program Files\\Graphviz".
  2. Next we need to add the libraries (files from "Graphviz\\lib") and its includes ("Graphviz\\include\\graphviz") to a project.
- 3. 
  #### Windows
  3. Open CMakeLists.txt and define the location of our library using "set" command. Replace "C:/Program Files/Graphviz" with your path.
  ```cmake 
