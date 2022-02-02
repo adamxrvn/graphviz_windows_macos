@@ -1,6 +1,6 @@
 # How to use Graphviz with C++ on Windows/MacOS
 ### Configuration
- 1. Install Graphviz for [Windows](https://graphviz.org/download/#windows)/[MacOS](https://graphviz.org/download/#mac) and remember the installation path. In my case it is "C:\\Program Files\\Graphviz".
+ 1. Install Graphviz for [Windows](https://graphviz.org/download/#windows)/[MacOS](https://graphviz.org/download/#mac) and remember the installation path. In my case it is "C:\\Program Files\\Graphviz" and "/usr/local/Cellar/graphviz/2.50.0" respectively.
  2. Next we need to add the libraries (files from "Graphviz\\lib") and its includes ("Graphviz\\include\\graphviz") to a project.
  #### Windows
  3. Open CMakeLists.txt and define the location of our library using the "set" command. Replace "C:/Program Files/Graphviz" with your path.
