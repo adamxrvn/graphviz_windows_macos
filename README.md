@@ -13,7 +13,7 @@ target_link_libraries(${CMAKE_PROJECT_NAME} ${GVC_LIBS})
 include_directories("${GRAPHVIZ_DIR}/include/graphviz")
 ```
 
-You will end up with a CMake like this
+You will end up with a CMake file like this
 
 ![CMakeLists](pictures/g_1.png "CMakeLists")
 ### Application
