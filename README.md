@@ -3,11 +3,11 @@
  1. Install Graphviz for [Windows](https://graphviz.org/download/#windows)/[MacOS](https://graphviz.org/download/#mac) and remember the installation path. In my case it is "C:\\Program Files\\Graphviz" and "/usr/local/Cellar/graphviz/2.50.0" respectively.
  2. Next we need to add the libraries (files from "Graphviz\\lib") and its includes ("Graphviz\\include\\graphviz") to a project:
  #### Windows
- 3. Open CMakeLists.txt and define the location of our library using the "set" command. Replace "C:/Program Files/Graphviz" with your path.
+ 2.1. Open CMakeLists.txt and define the location of our library using the "set" command. Replace "C:/Program Files/Graphviz" with your path.
  ```cmake 
 set(GRAPHVIZ_DIR "C:/Program Files/Graphviz") 
 ```
-4. Add the libraries and includes
+2.2. Add the libraries and includes
  ```cmake
 file(GLOB GVC_LIBS "${GRAPHVIZ_DIR}/lib/*.lib")
 target_link_libraries(${CMAKE_PROJECT_NAME} ${GVC_LIBS})
@@ -15,11 +15,11 @@ include_directories("${GRAPHVIZ_DIR}/include/graphviz")
 ```
 
 #### MacOS
-3. Open CMakeLists.txt and define the location of our library using the "set" command. Replace "/usr/local/Cellar/graphviz/2.50.0" with your path. <br/>The path depends on the way you installed the graphviz and its version. If it is installed using Homebrew, it can be found in "/usr/local/Cellar/" folder.
+2.1. Open CMakeLists.txt and define the location of our library using the "set" command. Replace "/usr/local/Cellar/graphviz/2.50.0" with your path. <br/>The path depends on the way you installed the graphviz and its version. If it is installed using Homebrew, it can be found in "/usr/local/Cellar/" folder.
 ```cmake
 set(GRAPHVIZ_DIR "/usr/local/Cellar/graphviz/2.50.0")
 ```
-4. Add the libraries and includes
+2.2. Add the libraries and includes
  ```cmake
 file(GLOB GVC_LIBS "${GRAPHVIZ_DIR}/lib/*.dylib")
 target_link_libraries(${CMAKE_PROJECT_NAME} ${GVC_LIBS})
